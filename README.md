@@ -3,6 +3,8 @@
 ## Overview
 This project is a **Next.js** application that fetches and displays **voice actor profiles** from an external API. The application features **search functionality, pagination, keyword highlighting, and an integrated audio player** to enhance user experience.
 
+**DEMO**: [Demo link](https://voice123-test-5esq20n5f-mister9ces-projects.vercel.app/?keywords=&page=1)
+
 ---
 
 ## Features
@@ -18,7 +20,7 @@ This project is a **Next.js** application that fetches and displays **voice acto
 
 ## Tech Stack
 - **Next.js** (Frontend framework)
-- **TypeScript** (Static typing)
+- **TypeScript** (Styling)
 - **ShadCN UI** (UI components)
 - **Jest & React Testing Library** (Testing)
 - **Postman** (API exploration)
@@ -30,7 +32,8 @@ This project is a **Next.js** application that fetches and displays **voice acto
 
 ### **1. Clone the Repository**
 ```sh
-git clone <repository-url>
+git clone https://github.com/Mister9ce/voice123-test.git
+
 cd voice123-test
 ```
 
