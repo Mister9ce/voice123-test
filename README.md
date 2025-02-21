@@ -1,36 +1,125 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Voice123 Test Project
 
-## Getting Started
+## Overview
+This project is a **Next.js** application that fetches and displays **voice actor profiles** from an external API. The application features **search functionality, pagination, keyword highlighting, and an integrated audio player** to enhance user experience.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Features
+- **Voice Actor Cards**: Displays actor information with images, names, sample audio etc..
+- **Search Functionality**: Implements real-time filtering with keyword highlighting.
+- **Pagination**: Supports easy navigation between multiple pages of voice actors.
+- **Audio Player**: Ensures only one audio sample plays at a time.
+- **UI Components**: Built with reusable, accessible components using ShadCN UI.
+- **Error Handling**: Implements fallback mechanisms for missing images and broken audio URLs.
+- **Responsive Design**: Optimized for various screen sizes and devices.
+
+---
+
+## Tech Stack
+- **Next.js** (Frontend framework)
+- **TypeScript** (Static typing)
+- **ShadCN UI** (UI components)
+- **Jest & React Testing Library** (Testing)
+- **Postman** (API exploration)
+- **Figma** (UI Prototyping)
+
+---
+
+## Setup Instructions
+
+### **1. Clone the Repository**
+```sh
+git clone <repository-url>
+cd voice123-test
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### **2. Install Dependencies**
+```sh
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### **3. Run the Development Server**
+```sh
+npm run dev
+```
+The application will be available at **http://localhost:3000**.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### **4. Running Tests**
+To run unit tests:
+```sh
+npm run test
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Work Log
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### **Day 1**
+#### 1. API Exploration
+- Explored API responses using Postman.
+- Noted differences in audio URL structures, custom headers, and authentication requirements.
+- **Duration**: 2 hours
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+#### 2. UI Prototyping
+- Created a **mockup** in Figma.
+- **Duration**: 1 hour
 
-## Deploy on Vercel
+#### 3. Project Setup & Initialization
+- Initialized Next.js project and installed dependencies.
+- **Duration**: 2 hours
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### 4. UI Component Development
+- Built **header, voice actor cards, pagination buttons**.
+- Used **ShadCN UI components** to speed up prototyping.
+- **Duration**: 4 hours
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+### **Day 2**
+#### 1. API Integration
+- Fetched API response to populate voice actor cards.
+- Handled missing image links by adding placeholders.
+- **Duration**: 1 hour
+
+#### 2. Implementing Audio Player
+- Built an **audio player component**.
+- Addressed issues with missing base URLs and authentication requirements.
+- Created an **audio provider** to ensure only one audio plays at a time.
+- **Duration**: 3 hours
+
+#### 3. Search Functionality & Keyword Highlighting
+- Developed **search bar with real-time filtering**.
+- Implemented **keyword highlighting** in search results.
+- **Duration**: 3.5 hours
+
+#### 4. Pagination Implementation
+- Added functionality to the pagination component.
+- **Duration**: 1 hour
+
+#### 5. UI Enhancements
+- Improved **voice actor card UI, audio player UI, filter chips, and responsiveness**.
+- Added icons and refined layout.
+- **Duration**: 1 hour
+
+#### 6. Unit Testing
+- Wrote **unit tests** for critical components.
+- **Duration**: 1 hour
+
+---
+
+## Recommendations & Improvements
+
+1. **Authentication for Audio Files**
+   - Implement secure **authentication mechanisms** for accessing protected audio files.
+
+2. **Improved Fallback Mechanisms**
+   - Implement better fallback logic for missing **images and audio URLs**.
+
+3. **Performance Optimization**
+   - Use **caching and preloading** to improve loading speeds and user experience.
+
+4. **Enhanced API Error Handling**
+   - Implement detailed logging and retry mechanisms for network requests.
+
+
